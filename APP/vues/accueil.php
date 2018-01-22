@@ -43,9 +43,12 @@
     <div id="conteneur-body">
         <div id="conteneur-presentation">
             <div id="presentation">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero sagittis, sagittis diam non, sollicitudin lacus. Aliquam commodo condimentum tempus. Curabitur porttitor lobortis hendrerit. Maecenas justo mi, tempus et lorem a, placerat scelerisque orci. Nulla tristique tincidunt odio, non laoreet nulla volutpat ut. Curabitur nec odio ullamcorper, tempor sapien non, consequat mi. Proin ac neque eget sapien consequat mollis sit amet eu elit. Quisque blandit elit ac tortor scelerisque, eu rhoncus nisi fringilla. Vivamus ac dictum tortor, nec ornare nisi. Proin at felis purus. Mauris a mi bibendum erat egestas volutpat. Sed sed placerat ipsum, sed aliquam eros.
-
-                    Curabitur placerat erat eleifend metus bibendum, nec gravida tortor bibendum. Suspendisse eu pulvinar ante, malesuada condimentum dui. Integer massa magna, faucibus a aliquam sit amet, laoreet sit amet odio. Aenean molestie lacus nec nulla maximus, sed hendrerit ipsum faucibus. Vestibulum dolor mauris, fermentum ultricies pharetra in, scelerisque in orci. Sed elementum metus egestas lacus cursus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum orci erat, ultrices sed orci ut, efficitur dapibus ipsum. Curabitur id tellus sem. Maecenas sit amet semper magna. Maecenas a urna id massa dignissim tincidunt. Fusce vel mattis sapien. Phasellus id tincidunt ex.</p>
+                <div id="presentation-vertical">
+                    <p>
+                        Home'tech est la nouvelle solution pour équiper votre maison en domotique.</br> Que ce soit pour la sécurité, le controle à distance ou la simplicité,<br> nous saurons donner vis a votre maison pour combler vos attentes.<br>N'hésitez pas à explorer notre F.A.Q. pour mieux nous découvrir.
+                    </p>
+                    <form  method="post" action="index.php?cible=accueil&fonction=faq"><a><button id="bouton_sans_style" type="submit" >F.A.Q.</button></a></form>
+                </div>
             </div>
         </div>
         <div id="conteneur-inscription">
