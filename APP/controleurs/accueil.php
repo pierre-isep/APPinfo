@@ -24,6 +24,12 @@ switch ($function) {
         $alerte = false;
         break;
 
+    case 'faq':
+        $vue = "faq";
+        $title = "faq";
+        $alerte = false;
+        break;
+
     case 'connexion':
         //affichage de la page de connexion
         $vue = "accueil";
