@@ -9,12 +9,17 @@
     <title>Domisep</title>
 </head>
 
-<?php include("header.php");?>
+<body>
+<?php include("header_admin.php");?>
 
-    <div id="conteneur-body">
-    </div>
+<div id="section">
+
+</div>
 
 
 <?php
 include("footer.php");
 ?>
+
+</body>
+</html>
