@@ -33,10 +33,10 @@ switch ($function) {
 
         break;
 
-    case 'fonction_volets':
+    case 'fonction_lumiere':
         //affichage de la page où l'on peut actionner les volets
-        $vue = "fonction_volets";
-        $title = "fonction_volets";
+        $vue = "fonction_lumiere";
+        $title = "fonction_lumiere";
         $alerte = false;
 
         $ID_piece = recup_ID_piece($bdd);
@@ -54,14 +54,6 @@ switch ($function) {
 
 
 include 'vues/' . $vue . '.php';
-
-
-
-
-
-
-
-
 ?>
 
 
