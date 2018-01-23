@@ -1,0 +1,39 @@
+git status 
+
+touch blabla.md : créer blabla
+
+git add blabla.md : rajoute le fichier à l'index (se voit après dans git status)
+
+commit : suite de modification accompagnée d'un message
+
+git commit -m "ajouté fichier" (-m pour message, c'est optionnel)
+
+ls pour voir ce qu'il y a à l'interieur
+
+git log pour voir l'historique des modifications
+pour quitter le log : lettre q
+
+git commit -a évite de faire un add (attention la premiere fois on est quand meme)
+
+git checkout : permet de se positionner sur un cha précis (cha = id du coomit)
+
+cat script.js : permet d'afficher le code 
+
+git checkout master : permet de revenir sur le dernier commit
+
+Dans github : gist c'est pour s'envoyer un bout de code plutot que de l'envoyer par mail où il n'y a pas la coloration
+
+En se rendant sur github on peut copier le lien https du code d'autrui pour se l'aproprier 
+Il suffit de réaliser un git clone le lien dans un nouveau dossier 
+
+Ajout de fichier sur gitHUB : push puis add puis commit (classique)
+git push origin master
+
+pour récupérer du code changé sur github et non encore sur l'ordi (quand notre pote l'a push sur github ou que nous même avons fait une modif direct sur github) :
+git pull origin master
+
+Habituellement : on travaille sur sa machine en faisant des commits, à la fin on push sur github et les autres récupère avec pull
+
+Créer des branches (divergence de la base de code principale) 
+
+
