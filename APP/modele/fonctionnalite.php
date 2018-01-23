@@ -2,7 +2,6 @@
 session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=kum\'home', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function recup_ID_piece($bdd)
 {
@@ -50,15 +49,22 @@ function recup_donnee_capteur_temp($bdd,$var2){
     $idducapteur = $ID_capteur['num_serie'];
 
 
-
-
     $donnee = $bdd->prepare('SELECT valeur FROM donnee WHERE id_capteur = ?');
     $donnee->execute(array($idducapteur));
     $donnee = $donnee->fetch();
     $donnee = $donnee['valeur'];
 
-
     return $donnee;
+}
+
+function recup_id_capteur($bdd,$var2){
+
+    $ID_capteur = $bdd->prepare('SELECT num_serie FROM capteur WHERE id_piece = ? AND id_type = 1');
+    $ID_capteur->execute(array($var2));
+    $ID_capteur = $ID_capteur->fetch();
+    $idducapteur = $ID_capteur['num_serie'];
+
+    return $idducapteur;
 }
 
 function recup_etat_capteur_temp($bdd,$var2){
@@ -96,6 +102,25 @@ function recup_etat_capteur_hygro($bdd,$var2){
 }
 
 
+function recup_etat_capteur_lumiere($bdd,$var2){
+
+    $ID_capteur = $bdd->prepare('SELECT num_serie FROM capteur WHERE id_piece = ? AND id_type = 2');
+    $ID_capteur->execute(array($var2));
+    $ID_capteur = $ID_capteur->fetch();
+    $idducapteur = $ID_capteur['num_serie'];
+
+    $etat = $bdd->prepare('SELECT etat FROM capteur WHERE num_serie = ?');
+    $etat->execute(array($idducapteur));
+
+    $etat = $etat->fetch();
+    $etat = $etat['etat'];
+
+    return $etat;
+
+}
+
+
+
 function recup_donnee_capteur_hygro($bdd,$var2)
 {
     $ID_capteur = $bdd->prepare('SELECT num_serie FROM capteur WHERE id_piece = ? AND id_type = 3');
@@ -112,6 +137,54 @@ function recup_donnee_capteur_hygro($bdd,$var2)
     return $donnee;
 }
 
+function recup_donnee_capteur_lumiere($bdd,$var2)
+{
+    $ID_capteur = $bdd->prepare('SELECT num_serie FROM capteur WHERE id_piece = ? AND id_type = 2');
+    $ID_capteur->execute(array($var2));
+
+
+    $ID_capteur = $ID_capteur->fetch();
+    $idducapteur = $ID_capteur['num_serie'];
+
+
+
+    $donnee = $bdd->prepare('SELECT valeur FROM donnee WHERE id_capteur = ?');
+    $donnee->execute(array($idducapteur));
+    $donnee = $donnee->fetch();
+    $donnee = $donnee['valeur'];
+
+    return $donnee;
+}
+
+function etat_de_marche_lumiere($bdd,$idunique){
+
+    $donnee = $bdd->prepare('SELECT valeur FROM donnee WHERE id_capteur = ?');
+    $donnee->execute(array($idunique));
+    $donnee = $donnee->fetch();
+    $donnee = $donnee['valeur'];
+
+    if ($donnee == 1){
+
+        $etatdemarche = '<img id="image_lumiere_eclairee" src="image\eclairee.png" alt="eclairee" height="50px" width="50px" />';
+    } else {
+        $etatdemarche = '<img id="image_lumiere_eteinte" src="image\eteinte.png" alt="eteinte" height="50px" width="50px" />';
+    }
+
+    return $etatdemarche;
+
+}
+
+function recup_id_capteur_lumiere_V2($bdd,$var2){
+    $ID_capteur = $bdd->prepare('SELECT num_serie FROM capteur WHERE id_piece = ? AND id_type = 2');
+    $ID_capteur->execute(array($var2));
+
+
+    return $ID_capteur;
+}
+
+
+
+
 function moyenne($donnee,$total){
 
     $total = $donnee + $total;
@@ -120,14 +193,6 @@ function moyenne($donnee,$total){
 
 
 }
-
-
-
-
-
-
-
-
 
 ?>
 
