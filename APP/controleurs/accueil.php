@@ -168,14 +168,6 @@ switch ($function) {
         }
         break;
 
-    case 'deconexion':
-        //affichage de l'accueil
-        session_unset();
-        session_destroy();
-        $vue = "accueil";
-        $title = "Accueil";
-        $alerte = false;
-        break;
 
     default:
         // si aucune fonction ne correspond au paramètre function passé en GET
