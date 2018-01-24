@@ -5,31 +5,23 @@ session_start();?>
 <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://localhost/APP/css/style.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/footer.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/header.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/parametres.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/parametres.css">
     <link rel="script" href="OHcabouge.js">
     <title>Domisep</title>
 </head>
-
-<?php include("header.php");?>
+<body>
+<?php include 'modele/connexion.php';
+ include("header.php");?>
+<div id="section2">
 <div id="conteneur-titre">
 <p><strong> Paramètres généraux du compte </strong></p>
 </div>
-
 <div id="conteneur-body">
 <div id="conteneur-profil">
 <?php
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=APP2;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-/* die(var_dump($_SESSION['ID'])); */
 $ID_personne = $_SESSION['ID'];
 
 
@@ -57,13 +49,16 @@ while ($donnees = $req->fetch())
 }
 $req->closeCursor(); 
 ?>
-
-<p><em><a href="profil.php">Éditer le profil</a></em></p>
-</div>
+    <form  method="post" action="index.php?cible=menu_utilisateur&fonction=parametres"><button id="bouton_sans_style2" type="submit" >Editer le profil</button></form>
 
 </div>
 
+</div>
+</div>
 
 <?php
 include("footer.php");
 ?>
+
+</body>
+</html>

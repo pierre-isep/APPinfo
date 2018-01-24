@@ -5,10 +5,10 @@ session_start();?>
 <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://localhost/APP/css/style.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/footer.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/header.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/profil.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profil.css">
     <link rel="script" href="OHcabouge.js">
     <title>Domisep</title>
 </head>
@@ -19,7 +19,7 @@ session_start();?>
 
 <div id="conteneur-body">
 
-	<form action="editTool.php" method="POST" enctype="multipart/form-data">
+	<form action="index.php?cible=menu_utilisateur&fonction=outil_edition_utilisateur" method="POST" enctype="multipart/form-data">
 		<label for="nom"><strong>Nom</strong> :</label> <input type="text" name="nom"><br><br>
 		<label for="prenom"><strong>Prénom</strong> :</label> <input type="text" name="prenom"><br><br>
 		<label for="login"><strong>Login</strong> : </label> <input type="text" name="login"><br><br>
