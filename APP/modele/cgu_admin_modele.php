@@ -5,11 +5,12 @@ function afficherCGU($bdd) {
 }
 
 function modifierCGU($bdd) {
-  $requete = $bdd->prepare('INSERT INTO conditions_generales_utilisation(Contenu,Date_de_derniere_modification,Date_de_mise_en_ligne) VALUES(:Contenu,NOW(),:Date_de_mise_en_ligne)');
-  $requete->execute(array(
-    'Contenu' => $_POST['Contenu'],
-    'Date_de_mise_en_ligne' => date('Y-m-d')
+    $requete = $bdd->prepare('DELETE FROM conditions_generales_utilisation ');
+    $requete->execute(array());
+    $requete = $bdd->prepare('INSERT INTO conditions_generales_utilisation(Contenu,Date_de_derniere_modification,Date_de_mise_en_ligne) VALUES(:Contenu,NOW(),:Date_de_mise_en_ligne)');
+    $requete->execute(array(
+        'Contenu' => $_POST['Contenu'],
+        'Date_de_mise_en_ligne' => date('Y-m-d')
   ));
-  header('location:cgu_admin_controleur.php');
 }
 ?>
