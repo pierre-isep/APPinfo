@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 22 jan. 2018 à 18:24
+-- Généré le :  jeu. 25 jan. 2018 à 22:23
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.0.23
 
@@ -149,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `compte` (
   `ID_typeCompte` int(11) NOT NULL,
   PRIMARY KEY (`ID_personne`),
   KEY `CE-Typecompte` (`ID_typeCompte`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `compte`
@@ -163,7 +163,30 @@ INSERT INTO `compte` (`ID_personne`, `Nom_personne`, `Prenom`, `tel`, `Email`, `
 (9, 'Beauseigneur', 'Theo', '0633875976', 'theo.beauseigneur@gmail.com', 'theob', '12345678', 1),
 (10, 'Souffir', 'Maeva', '0761582248', 'maeva.souffir.mpsi@gmail.com', 'cookie', 'ipodnano', 1),
 (12, 'Bidaux', 'Wilfried', '0656897845', 'wb090169@gmail.com', 'Excalibur', '12345678', 1),
-(14, 'Bidaux', 'Roselyne', NULL, 'ma.maman@gmail.com', NULL, '12345678', 1);
+(14, 'Bidaux', 'Roselyne', NULL, 'ma.maman@gmail.com', NULL, '12345678', 1),
+(15, 'technicien', 'technicien', '0601020304', 'technicien@gmail.com', 'technicien', '12345678', 3);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `conditions_generales_utilisation`
+--
+
+DROP TABLE IF EXISTS `conditions_generales_utilisation`;
+CREATE TABLE IF NOT EXISTS `conditions_generales_utilisation` (
+  `ID` int(255) NOT NULL AUTO_INCREMENT,
+  `Contenu` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `Date_de_derniere_modification` date NOT NULL,
+  `Date_de_mise_en_ligne` date NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `conditions_generales_utilisation`
+--
+
+INSERT INTO `conditions_generales_utilisation` (`ID`, `Contenu`, `Date_de_derniere_modification`, `Date_de_mise_en_ligne`) VALUES
+(39, 'voici les condition general d\'utilisation rentree depuis le super site code par loic bidaux xD', '2018-01-25', '2018-01-25');
 
 -- --------------------------------------------------------
 
@@ -352,6 +375,29 @@ INSERT INTO `ownerlogment` (`ID_personnes`, `ID_logement`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `panne`
+--
+
+DROP TABLE IF EXISTS `panne`;
+CREATE TABLE IF NOT EXISTS `panne` (
+  `id_panne` int(255) NOT NULL,
+  `id_personne` int(255) NOT NULL,
+  `num_serie_capteur` int(255) DEFAULT NULL,
+  `num_serie_cemac` int(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_panne`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `panne`
+--
+
+INSERT INTO `panne` (`id_panne`, `id_personne`, `num_serie_capteur`, `num_serie_cemac`, `description`) VALUES
+(1, 15, 12, 0, 'OH NON! la niche de mon chien est cassé!');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `piece`
 --
 
@@ -377,8 +423,7 @@ INSERT INTO `piece` (`id_piece`, `id_type_piece`, `id_logement`, `nom_piece`, `n
 (11, 1, NULL, '1', 1),
 (20, 11, 3, '11', 1),
 (21, 11, 3, '11', 2),
-(22, 11, 3, '11', 5),
-(23, 11, 3, '11', 10);
+(22, 11, 3, '11', 5);
 
 -- --------------------------------------------------------
 
