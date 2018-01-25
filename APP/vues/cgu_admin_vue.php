@@ -11,7 +11,7 @@
     <title>Domisep</title>
 </head>
 <body>
-<?php include("header.php");?>
+<?php include("header_admin.php");?>
 
 <div id="section">
     <div class="texte">
