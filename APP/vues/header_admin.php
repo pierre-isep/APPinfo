@@ -36,7 +36,7 @@
         <div id="utilisateur-fleche"><img id="fleche"src="http://localhost/APP/image/Fleche.png" id="logo"></div>
         <div id="conteneur-menu-utilisateur">
             <ul id="menu-utilisateur">
-                <li><form  method="post" action="index.php?cible=accueil&fonction=deconexion"><a><button id="bouton_sans_style" type="submit" >Déconexion</button></a></form></li>
+                <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=deconexion"><a><button id="bouton_sans_style" type="submit" >Déconexion</button></a></form></li>
             </ul>
 
 

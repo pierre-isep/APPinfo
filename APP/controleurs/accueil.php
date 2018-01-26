@@ -162,8 +162,27 @@ switch ($function) {
                     'Email' => $_POST['E-mail'],
                     'login' => NULL,
                     'mot_de_passe' => $_POST['Mot_De_Passe'],
-                    'ID_typeCompte' => 1
+                    'ID_typeCompte' => 2
                     ));
+
+                $req = $bdd->prepare('SELECT ID_personne FROM compte WHERE Email = :Email ');
+                $req->execute(array(
+                    'Email' => $_POST['E-mail']));
+                $resultat = $req->fetch();
+
+                $req = $bdd->prepare('SELECT MAX(ID_logement) AS valmax FROM ownerlogment');
+                $resultat=$req->execute(array());
+
+                die(var_dump($resultat['valmax']));
+                $id=$resultat['max(ID_logement)'];
+                $new_id=$id+1;
+
+                $req = $bdd->prepare('INSERT INTO ownerlogment(ID_personnes, ID_logement) VALUES( :ID_personnes, :ID_logement)');
+
+                $req->execute(array(
+                    'ID_personnes' => $resultat['ID_personne'],
+                    'ID_logement' => $new_id
+                ));
             }
         }
         break;

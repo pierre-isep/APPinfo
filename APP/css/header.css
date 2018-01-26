@@ -17,6 +17,31 @@
     background-color : darkgrey;
 }
 
+#conteneurentete_technicien
+{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    min-height: 120px;
+    box-shadow: 0 3px 100px rgb(62, 181, 230);
+    background-color : darkgrey;
+}
+
+#vertical
+{
+    display:flex;
+    flex-direction: column;
+}
+#deconexion
+{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color : darkgrey;
+}
+
 #logoentete
 {
     display:flex;

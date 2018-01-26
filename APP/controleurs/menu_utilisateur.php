@@ -1,4 +1,5 @@
 <?php
+session_start();
 // on inclut le fichier modèle contenant les appels à la BDD
 
 include 'modele/connexion.php';

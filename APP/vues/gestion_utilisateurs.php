@@ -1,5 +1,4 @@
-<?php
-session_start();?>
+
     <!DOCTYPE html>
 <head>
 
@@ -19,7 +18,7 @@ session_start();?>
                     <div id="section2">
                                 <h1> Informations utilisateurs : </h1>
                             <?php
-
+                            $requete =  $bdd->query('SELECT ID_personne FROM compte');
                             $reponse = $bdd->query('SELECT ID_personne, Nom_personne, Prenom, ID_typeCompte FROM compte');
 
 

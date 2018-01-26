@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="http://localhost/APP/css/style.css">
     <link rel="stylesheet" href="http://localhost/APP/css/footer.css">
     <link rel="stylesheet" href="http://localhost/APP/css/header.css">
+    <link rel="stylesheet" href="http://localhost/APP/css/accueil_technicien.css">
     <link rel="script" href="OHcabouge.js">
     <title>Domisep</title>
 </head>
 <body>
-<?php include("header.php");?>
+<?php include("header_technicien.php");?>
 
 <div id="section">
     <div id="conteneur_general_pannes">
@@ -40,16 +41,16 @@
 
                 ?>
                 <div id="conteneur_panne">
-                    <p><?php echo $personne['Prenom'].' '.$personne['Nom_personne'].' : téléphone : '.$personne['tel'].' : E-mail : '.$personne['Email'] ?></p>
-                    <br>
-                    <p><?php echo 'Sujet de la panne : capteur de '.$nom_capteur['nom_type'].' : '.$panne['num_serie_capteur'] ?></p>
-                    <br>
+                    <div id="client">
+                        <p><?php echo 'Client :  '.$personne['Prenom'].' '.$personne['Nom_personne'].' , téléphone : '.$personne['tel'].' , E-mail : '.$personne['Email'] ?></p>
+                        <p><?php echo 'Sujet de la panne : capteur de '.$nom_capteur['nom_type'].' : '.$panne['num_serie_capteur'] ?></p>
+                    </div>
                     <div id="description">
                     <p><?php echo 'Description : '.$panne['description'] ?></p>
                     </div>
-                    <div id="bouton_validation_panne"
+                    <div id="conteneur_bouton_validation_panne">
                     <form  method="post" action="index.php?cible=tableau_de_bord_technicien&fonction=validation_panne_capteur&id_panne=<?php echo $panne['id_panne']?>">
-                        <button id="bouton_suprimer" type="submit" >
+                        <button id="bouton_validation_panne" type="submit" >
                             Valider la résolution de la panne
                         </button>
                     </form>
@@ -70,7 +71,7 @@
                 $resultat = $req->fetch();
                 $req = $bdd->prepare('SELECT ID_personnes FROM ownerlogment WHERE ID_logement =:ID_logement');
                 $req->execute(array('ID_logement' => $resultat['id_logement']));
-                $resulat = $req->fetch();
+                $resultat = $req->fetch();
                 $req = $bdd->prepare('SELECT Nom_personne,Prenom,tel,Email FROM compte WHERE ID_personne =:ID_personne');
                 $req->execute(array('ID_personne' => $resultat['ID_personnes']));
                 $personne = $req->fetch();
@@ -78,22 +79,22 @@
 
                 ?>
                 <div id="conteneur_panne">
-                    <p><?php echo $personne['Prenom'].' '.$personne['Nom_personne'].' : téléphone : '.$personne['tel'].' : E-mail : '.$personne['Email'] ?></p>
-                    <br>
-                    <p><?php echo 'Sujet de la panne : cemac : '.$panne['num_serie_cemac'] ?></p>
-                    <br>
+                    <div id="client">
+                        <p><?php echo $personne['Prenom'].' '.$personne['Nom_personne'].' : téléphone : '.$personne['tel'].' : E-mail : '.$personne['Email'] ?></p>
+                        <p><?php echo 'Sujet de la panne : cemac : '.$panne['num_serie_cemac'] ?></p>
+                    </div>
                     <div id="description">
                         <p><?php echo 'Description : '.$panne['description'] ?></p>
                     </div>
-                    <div id="bouton_validation_panne"
-                    <form  method="post" action="index.php?cible=tableau_de_bord_technicien&fonction=validation_panne_capteur&id_panne=<?php echo $panne['id_panne']?>">
-                        <button id="bouton_suprimer" type="submit" >
+                    <div id="conteneur_bouton_validation_panne">
+                    <form  method="post" action="index.php?cible=tableau_de_bord_technicien&fonction=validation_panne_cemac&id_panne=<?php $panne['id_panne']?>">
+                        <button id="bouton_validation_panne" type="submit" >
                             Valider la résolution de la panne
                         </button>
-                    </form></div>
-
+                    </form>
                 </div>
 
+                </div>
 
                 <?php
             }

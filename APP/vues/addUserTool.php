@@ -23,21 +23,22 @@ $type=2;
 $tel=$_POST['tel'];
 $mail=$_POST['mail'];
 
-if(strlen($login) < 5 || $password != $repeat) 
+if(strlen($login) < 5 || $mdp != $mdp2)
 {
     echo "Vous n'avez pas rempli correctement le formulaire !";
 }
 
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=APP2;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-echo $nom,$prenom,$login,$mdp,$type,$tel,$mail;
-
 $bdd->exec("INSERT INTO `compte`(`Nom_personne`,`Prenom`,`tel`,`Email`,`login`,`mot_de_passe`,`ID_typeCompte`) values('".$nom."','".$prenom."',".$tel.",'".$mail."','".$login."','".$mdp."',".$type.")");
 include('gestion_utilisateurs.php');
+
+$req = $bdd->prepare('SELECT ID_personne FROM compte WHERE Email = :Email ');
+$req->execute(array(
+    'Email' => $mail));
+$resultat = $req->fetch();
+
+$req = $bdd->prepare('INSERT INTO ownerlogment(ID_personnes) VALUES( :ID_personnes)');
+
+$req->execute(array(
+    'ID_personnes' => $resultat['ID_personne']
+));
 ?>
