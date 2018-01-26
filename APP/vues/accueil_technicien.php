@@ -80,7 +80,7 @@
                 ?>
                 <div id="conteneur_panne">
                     <div id="client">
-                        <p><?php echo $personne['Prenom'].' '.$personne['Nom_personne'].' : téléphone : '.$personne['tel'].' : E-mail : '.$personne['Email'] ?></p>
+                        <p><?php echo 'Client :  '.$personne['Prenom'].' '.$personne['Nom_personne'].' , téléphone : '.$personne['tel'].' , E-mail : '.$personne['Email'] ?></p>
                         <p><?php echo 'Sujet de la panne : cemac : '.$panne['num_serie_cemac'] ?></p>
                     </div>
                     <div id="description">
