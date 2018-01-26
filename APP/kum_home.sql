@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 25 jan. 2018 à 22:23
+-- Généré le :  ven. 26 jan. 2018 à 17:54
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.0.23
 
@@ -149,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `compte` (
   `ID_typeCompte` int(11) NOT NULL,
   PRIMARY KEY (`ID_personne`),
   KEY `CE-Typecompte` (`ID_typeCompte`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `compte`
@@ -164,7 +164,7 @@ INSERT INTO `compte` (`ID_personne`, `Nom_personne`, `Prenom`, `tel`, `Email`, `
 (10, 'Souffir', 'Maeva', '0761582248', 'maeva.souffir.mpsi@gmail.com', 'cookie', 'ipodnano', 1),
 (12, 'Bidaux', 'Wilfried', '0656897845', 'wb090169@gmail.com', 'Excalibur', '12345678', 1),
 (14, 'Bidaux', 'Roselyne', NULL, 'ma.maman@gmail.com', NULL, '12345678', 1),
-(15, 'technicien', 'technicien', '0601020304', 'technicien@gmail.com', 'technicien', '12345678', 3);
+(15, 'technicien', 'technicien', '0102030605', 'technicien@gmail.com', 'technicien', '12345678', 3);
 
 -- --------------------------------------------------------
 
@@ -359,8 +359,9 @@ INSERT INTO `logement` (`ID_logement`, `Nb_piece`, `Nb_habitant`, `ID_adresse`) 
 
 DROP TABLE IF EXISTS `ownerlogment`;
 CREATE TABLE IF NOT EXISTS `ownerlogment` (
-  `ID_personnes` int(11) NOT NULL,
-  `ID_logement` int(11) NOT NULL
+  `ID_personnes` int(255) NOT NULL,
+  `ID_logement` int(255) NOT NULL,
+  PRIMARY KEY (`ID_logement`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -393,7 +394,8 @@ CREATE TABLE IF NOT EXISTS `panne` (
 --
 
 INSERT INTO `panne` (`id_panne`, `id_personne`, `num_serie_capteur`, `num_serie_cemac`, `description`) VALUES
-(1, 15, 12, 0, 'OH NON! la niche de mon chien est cassé!');
+(1, 15, 12, 0, 'OH NON! la niche de mon chien est cassé!'),
+(3, 15, 0, 12, 'Cette cemac is broken');
 
 -- --------------------------------------------------------
 
