@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 28 jan. 2018 à 15:38
+-- Généré le :  Dim 28 jan. 2018 à 22:00
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.0.23
 
@@ -149,14 +149,12 @@ CREATE TABLE IF NOT EXISTS `compte` (
 --
 
 INSERT INTO `compte` (`ID_personne`, `Nom_personne`, `Prenom`, `tel`, `Email`, `login`, `mot_de_passe`, `ID_typeCompte`) VALUES
-(1, 'Berger', 'Pierre', '0603526001', 'pierre.berger_@hotmail.fr', 'pierreberger', 'motdepasse', 1),
+(1, 'Berger', 'Pierre', '0603526001', 'administrateur@hotmail.fr', 'pierreberger', 'motdepasse', 1),
 (2, 'Hunsinger', 'Camille', '0603526001', 'camille.hunsinger@gmail.com', 'camcamdu75', 'monmotdepasseperso', 2),
 (3, 'Belhadri', 'Bobyou', '0603621313', 'bob.you@orange.fr', 'bobyou', 'monsupermotdepasse', 2),
-(5, 'Bidaux', 'Loic', '0651019784', 'loic.bidaux@gmail.com', 'Voga', '12345678', 2),
+(5, 'Bidaux', 'Loic', '0651019784', 'utilisateur@gmail.com', 'Voga', '12345678', 2),
 (9, 'Beauseigneur', 'Theo', '0633875976', 'theo.beauseigneur@gmail.com', 'theob', '12345678', 1),
 (10, 'Souffir', 'Maeva', '0761582248', 'maeva.souffir.mpsi@gmail.com', 'cookie', 'ipodnano', 1),
-(12, 'Bidaux', 'Wilfried', '0656897845', 'wb090169@gmail.com', 'Excalibur', '12345678', 1),
-(14, 'Bidaux', 'Roselyne', NULL, 'ma.maman@gmail.com', NULL, '12345678', 1),
 (15, 'technicien', 'technicien', '0102030605', 'technicien@gmail.com', 'technicien', '12345678', 3);
 
 -- --------------------------------------------------------
