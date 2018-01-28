@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Exo-Regular';
+    src: url('../police/Exo-Regular.otf');
+}
+@font-face {
+    font-family: 'Exo-Thin';
+    src: url('../police/Exo-Thin.otf');
+}
+
+
+
+#conteneur_gerer_ma_maison
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    margin: 2% 1% 1% 2%;
+}
+
+#bouton_ajouter
+{
+    border: 0px;
+    background-color: transparent;
+    color: lightblue;
+    font-size: 25px;
+    cursor: pointer;
+    height: 50px;
+}
+
+#conteneur_titre_pièce,#conteneur_titre_cemac,#conteneur_titre_capteur
+{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 30px;
+    margin: 1% 1% 1% 1%;
+    padding: 0% 0% 0% 2%;
+    text-decoration: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: lightblue;
+    font-size: 20px;
+
+}
+
+#conteneur_titre_cemac
+{
+    margin-left: 5%;
+}
+
+#conteneur_titre_capteur
+{
+    margin-left: 10%;
+}
+
+#titre_piece,#titre_cemac,#titre_capteur
+{
+    display: flex;
+    width: 100%;
+    font-family: Exo-Regular;
+
+}
+
+
+#conteneur_suprimer
+{
+    display: flex;
+    width: 50px;
+    margin-right:1% ;
+
+
+}
+
+#bouton_suprimer
+{
+    border: 0px;
+    height: 50px;
+    background-color: transparent;
+    color: lightblue;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#picto_supprimer
+{
+    height: 30px;
+    width: 30px;
+    margin: 10px 0px 10px 0px;
+}
+
+#bouton_fermer
+{
+    float: right;
+    border: 0px;
+    height: 30px;
+    background-color: transparent;
+    color: lightblue;
+    cursor: pointer;
+}
+
+#picto_croix
+{
+    height: 30px;
+    width: 30px;
+    margin: 10px 0px 10px 0px;
+}
+
+#conteneur_etat
+{
+    display: flex;
+    width: 50px;
+}
+
+#picto_etat
+{
+    height: 20px;
+    width: 20px;
+    margin: 15px 0px 15px 0px;
+}
+
+
+#picto_plus
+{
+    display: block;
+    flex-direction: row;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+#conteneur_ajout
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#ajout-pièce,#ajout-cemac,#ajout-capteur
+{
+    display: flex ;
+    justify-content: center;
+    background-color: darkgray;
+    border: none;
+    border-radius: 30px;
+    margin: 0% 1% 1% 1%;
+    padding: 0% 0% 0% 0%;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+#conteneur_ajout_caché
+{
+    width: 100%;
+}
+
+#ajout_pièce_caché,#ajout_cemac_caché,#ajout_capteur_caché
+{
+    display: flex;
+    position: absolute;
+    left:50%;
+    margin-left: -250px;
+    margin-top: 200px;
+    width:500px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 30px;
+    border:2px solid lightblue;
+    box-shadow: 0 3px 100px rgb(62, 181, 230);
+    padding: 0% 1% 1% 1%;
+    color: lightblue;
+    font-family: 'Exo-Regular';
+
+}
+
