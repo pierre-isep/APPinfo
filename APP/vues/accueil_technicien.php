@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="http://localhost/APP/css/header.css">
     <link rel="stylesheet" href="http://localhost/APP/css/accueil_technicien.css">
     <link rel="script" href="OHcabouge.js">
-    <title>Domisep</title>
+    <title>Hometech</title>
 </head>
 <body>
 <?php include("header_technicien.php");?>

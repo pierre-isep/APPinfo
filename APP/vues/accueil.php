@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="script" href="OHcabouge.js">
-    <title>Domisep</title>
+    <title>Hometech</title>
 
 
 
@@ -23,7 +23,8 @@
             <img id="imglogo"src="image/logo-bls.png" id="logo">
         </div>
         <div id="hearthomeentete">
-            <titrelogo>Heart'Home</titrelogo>
+            <div id="hometech"><titrelogo>Hometech</titrelogo></div>
+            <div id="domisependessous">Domisep</div>
         </div>
         <div id="conteneur-connexion">
             <div id="connexion">
@@ -45,7 +46,7 @@
             <div id="presentation">
                 <div id="presentation-vertical">
                     <p>
-                        Home'tech est la nouvelle solution pour équiper votre maison en domotique.</br> Que ce soit pour la sécurité, le controle à distance ou la simplicité,<br> nous saurons donner vis a votre maison pour combler vos attentes.<br>N'hésitez pas à explorer notre F.A.Q. pour mieux nous découvrir.
+                        Hometech est la nouvelle solution pour équiper votre maison en domotique.</br> Simplicité, sécurité, contrôle ou gestion à distance, <br> donnons une vie à la maison pour rendre la votre plus facile.<br>N'hésitez pas à explorer notre Foire Aux Questions pour mieux nous découvrir.
                     </p>
                     <form  method="post" action="index.php?cible=accueil&fonction=faq"><a><button id="bouton_sans_style_accueil" type="submit" >F.A.Q.</button></a></form>
                 </div>

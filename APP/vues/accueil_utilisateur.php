@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://localhost/APP/css/header.css">
     <link rel="stylesheet" href="http://localhost/APP/css/accueil_utilisateur.css">
     <link rel="script" href="OHcabouge.js">
-    <title>Domisep</title>
+    <title>Hometech</title>
 </head>
 <body>
 <?php include("header.php");?>
@@ -65,7 +65,7 @@
             </div>
 
             <div id="texte_titre_fonctionalite">
-                Fonctionalité
+                Fonctionnalité
             </div>
 
         </div>

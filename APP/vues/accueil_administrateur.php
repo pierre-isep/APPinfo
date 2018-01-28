@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="http://localhost/APP/css/style.css">
     <link rel="stylesheet" href="http://localhost/APP/css/footer.css">
     <link rel="stylesheet" href="http://localhost/APP/css/header.css">
-    <title>Domisep</title>
+    <title>Hometech</title>
 </head>
 
 <body>
