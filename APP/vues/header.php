@@ -46,7 +46,7 @@
                 <ul id="menu-utilisateur">
                     <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=profil"><a><button id="bouton_sans_style" type="submit" >Profil</button></a></form></li>
                     <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=gestion_utilisateur"><a><button id="bouton_sans_style" type="submit" >Gérer ma famille</button></a></form></li>
-                    <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=deconexion"><a><button id="bouton_sans_style" type="submit" >Déconexion</button></a></form></li>
+                    <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=deconexion"><a><button id="bouton_sans_style" type="submit" >Déconnexion</button></a></form></li>
                 </ul>
 
 
