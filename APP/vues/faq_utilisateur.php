@@ -19,11 +19,11 @@
         <div class="faq">
             <ul>
                 <li>
-                    <a href="#question_1">Comment contater domisep ?</a>
+                    <a href="#question_1">Comment contacter domisep ?</a>
                 </li>
 
                 <li>
-                    <a href="#question_2">Comment controler mes capteurs ?</a>
+                    <a href="#question_2">Comment contrôler mes capteurs ?</a>
                 </li>
 
                 <li>
@@ -31,7 +31,7 @@
                 </li>
 
                 <li>
-                    <a href="#question_4">Comment ce désabonner ?</a>
+                    <a href="#question_4">Comment se désabonner ?</a>
                 </li>
 
                 <li>
@@ -47,17 +47,17 @@
             <ul>
                 <li>
                     <h3 id="question_1" name="question_1">
-                        Comment contater domisep ?
+                        Comment contacter Domisep ?
                     </h3>
                     SAV:0123456789 <br />
                     Service technique:0123456788 <br />
-                    mail:kum'home@gmail.com <br />
-                    adresse: 13 rue des nuages 75014 PARIS
+                    Mail:Hometech@gmail.com <br />
+                    Adresse: 13 rue des nuages 75014 PARIS
                 </li>
 
                 <li>
                     <h3 id="question_2" name="question_2">
-                        Comment controler mes capteurs ?
+                        Comment contrôler mes capteurs ?
                     </h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </li>
@@ -71,7 +71,7 @@
 
                 <li>
                     <h3 id="question_4" name="question_4">
-                        Comment ce désabonner ?
+                        Comment se désabonner ?
                     </h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </li>
