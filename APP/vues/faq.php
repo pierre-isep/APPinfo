@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="http://localhost/APP/css/footer.css">
     <link rel="stylesheet" href="http://localhost/APP/css/header.css">
     <link rel="stylesheet" href="css/accueil.css">
-    <link rel="stylesheet" href="FAQ.css">
     <link rel="script" href="OHcabouge.js">
     <title>Domisep</title>
 </head>
@@ -104,7 +103,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </li>
         </ul>
-        <form  method="post" action="index.php?cible=accueil&fonction=accueil"><a><button id="bouton_sans_style" type="submit" >Retour accueil</button></a></form>
+        <form  method="post" action="index.php?cible=accueil&fonction=accueil"><a><button id="bouton_sans_style_accueil" type="submit" >Retour accueil</button></a></form>
     </div>
 </div>
 </div>

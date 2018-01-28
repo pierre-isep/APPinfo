@@ -48,6 +48,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100%;
+    font-family: Exo-Regular;
 }
 
 #section2

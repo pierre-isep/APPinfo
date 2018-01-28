@@ -268,7 +268,7 @@ utilisateur
 
 
 
-#conteneur-sousmenu-header-gerermamaison
+/*#conteneur-sousmenu-header-gerermamaison
 {
 
     display: flex;
@@ -280,7 +280,7 @@ utilisateur
     right: 0px;
     border-bottom: 1px solid lightblue;
     box-shadow: 0 3px 100px rgb(62, 181, 230);
-    /*box-shadow: 0 3px 100px rgb(255, 192, 203);*/
+
     border-top: 1px solid lightblue;
     padding-left: 394.53px;
     padding-right: 236px;
@@ -293,7 +293,7 @@ utilisateur
 }
 
 
-#menu-header-gerermamaison:hover #conteneur-sousmenu-header-gerermamaison, #menu-header-gerermamaison.sfhover #conteneur-sousmenu-header-gerermamaison
+#menu-header-tableaudebord:hover #conteneur-sousmenu-header-gerermamaison, #menu-header-tableaudebord.sfhover #conteneur-sousmenu-header-gerermamaison
 {
     opacity: 1;
     visibility: visible;
@@ -335,7 +335,7 @@ utilisateur
     text-decoration: none;
 
 }
-
+*/
 
 #sousmenu-accueil a:hover
 {

@@ -188,7 +188,7 @@ if(isset($_POST['instruction_lum2']) && !empty($_POST['instruction_lum2'])){
                 ?>
                 <div id="ligne">
                     <div id="image_maison_div">
-                        <img id="image-maison" src="image\maison.png" alt="maison" height="100px" width="100px" />
+                        <img id="image-maison" src="image\picto_maison.png" alt="maison" height="100px" width="100px" />
                     </div>
                     <?php
                     echo  '<div id="affichage_moyenne">'. $moyenne .'</div> ';

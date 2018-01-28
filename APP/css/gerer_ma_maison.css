@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Exo-Regular';
+    src: url('../police/Exo-Regular.otf');
+}
+@font-face {
+    font-family: 'Exo-Thin';
+    src: url('../police/Exo-Thin.otf');
+}
+
+
+
 #conteneur_gerer_ma_maison
 {
     display: flex;
@@ -50,6 +61,7 @@
 {
     display: flex;
     width: 100%;
+    font-family: Exo-Regular;
 
 }
 

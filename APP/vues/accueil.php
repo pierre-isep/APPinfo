@@ -45,9 +45,9 @@
             <div id="presentation">
                 <div id="presentation-vertical">
                     <p>
-                        Home'tech est la nouvelle solution pour équiper votre maison en domotique.</br> Sécurité, simplicité, gestion à distance, suivi de données, <br> nous saurons donner vie à votre maison afin de combler vos attentes.<br>N'hésitez pas à explorer notre F.A.Q. pour mieux nous découvrir.
+                        Home'tech est la nouvelle solution pour équiper votre maison en domotique.</br> Que ce soit pour la sécurité, le controle à distance ou la simplicité,<br> nous saurons donner vis a votre maison pour combler vos attentes.<br>N'hésitez pas à explorer notre F.A.Q. pour mieux nous découvrir.
                     </p>
-                    <form  method="post" action="index.php?cible=accueil&fonction=faq"><a><button id="bouton_sans_style" type="submit" >F.A.Q.</button></a></form>
+                    <form  method="post" action="index.php?cible=accueil&fonction=faq"><a><button id="bouton_sans_style_accueil" type="submit" >F.A.Q.</button></a></form>
                 </div>
             </div>
         </div>
