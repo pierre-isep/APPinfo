@@ -1,8 +1,5 @@
 <?php
-session_start();
-$bdd = new PDO('mysql:host=localhost;dbname=kum\'home', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function recup_ID_piece($bdd)
 {
@@ -71,6 +68,47 @@ function recup_donnee_capteur_temp($bdd,$var2){
 
     return $donnee;
 }
+function recup_id_type_capteur($bdd,$var2){
+
+    
+    $ID_type_capteur = $bdd->prepare('SELECT id_type FROM capteur WHERE id_piece = ? ');
+    $ID_type_capteur->execute(array($var2));
+    $ID_type_capteur= $ID_type_capteur->fetch();
+    $idtypeducapteur = $ID_type_capteur['id_type'];
+
+
+
+
+
+    return $idtypeducapteur;
+}
+/*function recup_capt_temp($bdd,$var2){
+
+
+    $ID_type_capteur = $bdd->prepare('SELECT id_type FROM capteur WHERE id_piece = ?');
+   $ID_type_capteur->execute(array($var2));
+    $$ID_type_capteur = $ID_type_capteur->fetch();
+    $typeducapteur = $ID_type_capteur['id_type'];
+    $sql = 'SELECT COUNT(id_type) AS nb FROM capteur WHERE id_type=1 AND id_piece=?';
+    $result = $pdo->query($sql);
+    $columns = $result->fetch();
+    $nb = $columns['nb'];
+     
+    echo $nb." ".'capteurs Thermiques.';
+ 
+    if ($typeducapteur) {
+        # code...
+    }
+  while($typeducapteur=1->fetch()){
+ 
+                
+                    $compteur = $compteur + 1;
+                }
+    # code...
+}
+
+    return  $typeducapteur;
+}*/
 
 function recup_etat_capteur_temp($bdd,$var2){
 
@@ -141,4 +179,3 @@ function moyenne($donnee,$total){
 
 
 ?>
-

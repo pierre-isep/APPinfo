@@ -3,7 +3,7 @@ session_start();
 // on inclut le fichier modèle contenant les appels à la BDD
 
 include 'modele/connexion.php';
-include 'modele/gerer_ma_maison.php';
+include 'modele/tableaubord_user.php';
 include './controleurs/fonction.php';
 
 
@@ -12,8 +12,8 @@ $function = $_GET['fonction'];
 
 switch ($function) {
 
-    case 'gerermamaison':
-        $vue = "gerer_ma_maison";
+    case 'tableau':
+        $vue = "tableaudebord_user";
         $title = "gerer_ma_maison";
         $alerte = false;
 
@@ -58,10 +58,11 @@ switch ($function) {
 
         break;
 
+
     case 'ajout_piece':
-        $vue = "gerer_ma_maison";
-        $title = "gerer_ma_maison";
-        $alerte = false;
+        $vue = "tableaudebord_user";
+        $title = "tableaudebord_user";
+        $alerte = true;
 
         if (isset($_POST['type_piece']) and isset($_POST['numero']))
         {
@@ -74,7 +75,7 @@ switch ($function) {
             $req->execute(array(
                 'id_type_piece' => $resultat['id_type_piece'],
                 'id_logement' => $_SESSION['id_logement'],
-                'nom_piece' => $_POST['type_piece'],
+                'nom_piece' => $resultat['id_type_piece'],
                 'numero' => $_POST['numero']));
         }
 
@@ -148,9 +149,9 @@ switch ($function) {
 
 
 
-    case 'inscription':
 
-        break;
+
+      
 
     default:
         // si aucune fonction ne correspond au paramètre function passé en GET

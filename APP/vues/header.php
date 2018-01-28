@@ -10,27 +10,29 @@
         <div id="logoentete">
             <img id="imglogo"src="http://localhost/APP/image/logo-bls.png" id="logo">
         </div>
-        <div id="hearthomeentete">
-            <div id="hometech"><titrelogo>Hometech</titrelogo></div>
-            <div id="domisependessous">Domisep</div>
+        <div id="Kumhomeentete">
+            <titrelogo>HomeTech</titrelogo>
         </div>
         <div id="menuglobal">
             <ul id="menu">
-                <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=tableau_de_bord_utilisateur&fonction=accueil"><a><button id="bouton_sans_style" type="submit" >Tableau de bord</button></a></form>
+                <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=tableaudeborduser&fonction=tableau"><a><button id="bouton_sans_style" type="submit" >Tableau de bord</button></a></form>
+                </li>
+                <li id="menu-global-connexion"><form  method="post" action="index.php?cible=tableaudebordwebmaster&fonction=tableau"><a><button id="bouton_sans_style" type="submit" >Statistiques</button></a></form>
                 </li>
                 <li id="menu-header-gerermamaison"><form  method="post" action="index.php?cible=gerermamaison&fonction=gerermamaison"><a><button id="bouton_sans_style" type="submit" >Gérer ma maison</button></a></form>
-   <!--                 <div id="conteneur-sousmenu-header-gerermamaison">
+                    <div id="conteneur-sousmenu-header-gerermamaison">
                         <ul id="sousmenu-header-gerermamaison">
                             <li><a href="#">Pièce1</a></li>
                             <li><a href="#">Pièce2</a></li>
                             <li><a href="#">Pièce3</a></li>
                             <li><a href="#">Pièce4</a></li>
                         </ul>
-                    </div>  -->
+                    </div>
                 </li>
-                <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=tableau_de_bord_utilisateur&fonction=faq"><a><button id="bouton_sans_style" type="submit" >FAQ</button></a></form>
+                <li id="menu-global-connexion"><a href="#">FAQ</a>
                 </li>
-
+                <li id="menu-global-contact"><a href="#">Contact</a>
+                </li>
             </ul>
 
 
@@ -42,9 +44,9 @@
             <div id="utilisateur-fleche"><img id="fleche"src="http://localhost/APP/image/Fleche.png" id="logo"></div>
             <div id="conteneur-menu-utilisateur">
                 <ul id="menu-utilisateur">
-                    <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=profil"><a><button id="bouton_sans_style" type="submit" >Profil</button></a></form></li>
-                    <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=gestion_utilisateur"><a><button id="bouton_sans_style" type="submit" >Gérer ma famille</button></a></form></li>
-                    <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=deconexion"><a><button id="bouton_sans_style" type="submit" >Déconnexion</button></a></form></li>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Gérer les utilisateur secondaires</a></li>
+                    <li><a href="vues/Deconnexion.php">déconexion</a></li>
                 </ul>
 
 

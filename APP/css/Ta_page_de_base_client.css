@@ -1,0 +1,73 @@
+#conteneur-body{
+	background-color:#efefef;
+	display: flex;
+	flex-direction:inline;
+}
+#contenu{
+	background-color:white;
+	height: auto;
+	width: 33%;
+	border:2px solid grey;
+	
+}
+h1{color: red;}
+a[role="button"] {
+  color: #fff;
+  padding: .7em;
+  background-color: #428bca;
+  border: solid 1px #357ebd;
+  line-height:2.2em;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+ 
+a[role="button"]:hover, [role="button"].bouton:focus {
+  color: #fff;
+  background-color: #3071a9;
+  border: solid 1px #285e8e;
+  text-decoration: none;
+}
+ 
+a[role="button"]:active {
+  color: #fff;
+  background-color: #3071a9;
+  border: solid 1px #12314c;
+}
+
+label{
+	font-family: "Exo-regular";
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.submit{
+	background-color: #262626;
+	color: white;
+	border-radius: 5px;
+
+}
+p{
+	color: #262626;
+	font-family: "Exo-regular";
+	font-weight: bold;
+	font-size: 120%;
+	
+
+}
+legend{
+	margin-top: 10px;
+	color: #262626;
+	font-family: "Exo-regular";
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 110%;
+	background-color: #efefef;
+	
+
+}
+
+

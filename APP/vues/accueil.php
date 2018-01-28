@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="script" href="OHcabouge.js">
-    <title>Hometech</title>
+    <title>Domisep</title>
 
 
 
@@ -23,8 +23,7 @@
             <img id="imglogo"src="image/logo-bls.png" id="logo">
         </div>
         <div id="hearthomeentete">
-            <div id="hometech"><titrelogo>Hometech</titrelogo></div>
-            <div id="domisependessous">Domisep</div>
+            <titrelogo>Heart'Home</titrelogo>
         </div>
         <div id="conteneur-connexion">
             <div id="connexion">
@@ -44,12 +43,9 @@
     <div id="conteneur-body">
         <div id="conteneur-presentation">
             <div id="presentation">
-                <div id="presentation-vertical">
-                    <p>
-                        Hometech est la nouvelle solution pour équiper votre maison en domotique.</br> Simplicité, sécurité, contrôle ou gestion à distance, <br> donnons une vie à la maison pour rendre la votre plus facile.<br>N'hésitez pas à explorer notre Foire Aux Questions pour mieux nous découvrir.
-                    </p>
-                    <form  method="post" action="index.php?cible=accueil&fonction=faq"><a><button id="bouton_sans_style_accueil" type="submit" >F.A.Q.</button></a></form>
-                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero sagittis, sagittis diam non, sollicitudin lacus. Aliquam commodo condimentum tempus. Curabitur porttitor lobortis hendrerit. Maecenas justo mi, tempus et lorem a, placerat scelerisque orci. Nulla tristique tincidunt odio, non laoreet nulla volutpat ut. Curabitur nec odio ullamcorper, tempor sapien non, consequat mi. Proin ac neque eget sapien consequat mollis sit amet eu elit. Quisque blandit elit ac tortor scelerisque, eu rhoncus nisi fringilla. Vivamus ac dictum tortor, nec ornare nisi. Proin at felis purus. Mauris a mi bibendum erat egestas volutpat. Sed sed placerat ipsum, sed aliquam eros.
+
+                    Curabitur placerat erat eleifend metus bibendum, nec gravida tortor bibendum. Suspendisse eu pulvinar ante, malesuada condimentum dui. Integer massa magna, faucibus a aliquam sit amet, laoreet sit amet odio. Aenean molestie lacus nec nulla maximus, sed hendrerit ipsum faucibus. Vestibulum dolor mauris, fermentum ultricies pharetra in, scelerisque in orci. Sed elementum metus egestas lacus cursus posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum orci erat, ultrices sed orci ut, efficitur dapibus ipsum. Curabitur id tellus sem. Maecenas sit amet semper magna. Maecenas a urna id massa dignissim tincidunt. Fusce vel mattis sapien. Phasellus id tincidunt ex.</p>
             </div>
         </div>
         <div id="conteneur-inscription">
@@ -82,7 +78,7 @@
             <footer>&reg;Domisep</footer>
         </div>
         <div id="mention-légales">
-            <footer><form  method="post" action="index.php?cible=cgu_client_controleur"><a><button id="bouton_sans_style" type="submit" >cgu</button></a></form></footer>
+            <footer>Mentions légales</footer>
         </div>
     </div>
 </div>

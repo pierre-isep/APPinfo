@@ -63,32 +63,14 @@ body {
 #hearthomeentete
 {
     margin-left: 15px;
-    height: 100%;
 }
-
-#hometech{
-
-    margin-top: 0%;
-    height: 50%;
-
-}
-
-#domisependessous{
-
-    font-size: 200%;
-    font-family: "Exo-Thin";
-    color : lightblue;
-    margin-left: 27px;
-}
-
-
 titrelogo
 {
-    line-height:85px;
-
-    font-size: 250%;
+    line-height:150px;
+    font-size: 350%;
     font-family: "Exo-Thin";
     color : lightblue;
+
 
 }
 
@@ -192,7 +174,6 @@ titrelogo
     width:100%;
     height: 70%;
     border-right: 2px solid darkgray;
-    padding: 0% 3% 0% 3% ;
 }
 
 #conteneur-inscription
@@ -214,14 +195,6 @@ titrelogo
     border-left: 2px solid darkgray;
 
 }
-
-#conteneur-presentation
-{
-
-}
-
-
-
 
 .case-vide
 {
@@ -247,7 +220,6 @@ p
 {
     color: slategrey;
     font-family: "Exo-Regular";
-    font-size: 1.3em;
 }
 
 h1
@@ -256,25 +228,9 @@ h1
     font-family: "Exo-Regular";
 }
 
-#bouton_sans_style_accueil
-{
-    margin: 5% 0% 0% 0%;
-    padding: 0;
-    line-height: 0; /* Si ça fonctionne pas mets 0 */
-    border: 0;
-    background: none; /* ou transparent je sais plus... */
-    font-size: 3em;
-    color: steelblue;
-    text-decoration: none;
-    font-family: "Exo-Regular";
-    cursor: pointer;
-}
 
 
-#presentation-vertical a:hover
-{
-    border-bottom: 3px solid steelblue;
-}
+
 
 
 

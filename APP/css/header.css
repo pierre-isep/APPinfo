@@ -17,31 +17,6 @@
     background-color : darkgrey;
 }
 
-#conteneurentete_technicien
-{
-    display:flex;
-    justify-content: center;
-    width: 100%;
-    height: 120px;
-    min-height: 120px;
-    box-shadow: 0 3px 100px rgb(62, 181, 230);
-    background-color : darkgrey;
-}
-
-#vertical
-{
-    display:flex;
-    flex-direction: column;
-}
-#deconexion
-{
-    display:flex;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
-    background-color : darkgrey;
-}
-
 #logoentete
 {
     display:flex;
@@ -64,35 +39,21 @@
 
 #hearthomeentete
 {
+    height: 120px;
+    display:flex;
     margin-left: 15px;
-    height: 100%;
-}
-
-#hometech{
-
-    margin-top: 0%;
-    height: 50%;
 
 }
-
-#domisependessous{
-
-    font-size: 200%;
-    font-family: "Exo-Thin";
-    color : lightblue;
-    margin-left: 27px;
-}
-
-
 titrelogo
 {
-    line-height:85px;
-
-    font-size: 250%;
+    line-height:120px;
+    font-size: 350%;
     font-family: "Exo-Thin";
     color : lightblue;
 
+
 }
+
 
 #menuglobal
 {
@@ -109,6 +70,7 @@ titrelogo
     width: 100%;
     padding: 0;
     margin: 0;
+    font-size: 80%;
 
 
     line-height: 120px;
@@ -282,7 +244,7 @@ utilisateur
 
 
 
-/*#conteneur-sousmenu-header-gerermamaison
+#conteneur-sousmenu-header-gerermamaison
 {
 
     display: flex;
@@ -294,7 +256,7 @@ utilisateur
     right: 0px;
     border-bottom: 1px solid lightblue;
     box-shadow: 0 3px 100px rgb(62, 181, 230);
-
+    /*box-shadow: 0 3px 100px rgb(255, 192, 203);*/
     border-top: 1px solid lightblue;
     padding-left: 394.53px;
     padding-right: 236px;
@@ -307,7 +269,7 @@ utilisateur
 }
 
 
-#menu-header-tableaudebord:hover #conteneur-sousmenu-header-gerermamaison, #menu-header-tableaudebord.sfhover #conteneur-sousmenu-header-gerermamaison
+#menu-header-gerermamaison:hover #conteneur-sousmenu-header-gerermamaison, #menu-header-gerermamaison.sfhover #conteneur-sousmenu-header-gerermamaison
 {
     opacity: 1;
     visibility: visible;
@@ -349,7 +311,7 @@ utilisateur
     text-decoration: none;
 
 }
-*/
+
 
 #sousmenu-accueil a:hover
 {

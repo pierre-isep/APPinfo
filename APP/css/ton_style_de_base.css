@@ -3,10 +3,28 @@
     display: flex;
     flex-direction: column;
     min-height: 200px;
-    width: 100%;
+    width: 95.0%;
     height: 100%;
     margin: 2% 1% 1% 2%;
+    border:2% solid grey;
+    background-color: white;
+    border-radius: 10px;
 }
+
+#box
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: auto;
+    height: auto;
+    margin: 2% 1% 1% 2%;
+    border:2% solid grey;
+    background-color: ;
+    border-radius: 10px;
+    
+}
+
 
 #bouton_ajouter
 {
@@ -18,6 +36,30 @@
     height: 50px;
 }
 
+
+   
+.titre_ajout
+{
+     font-family: 'Exo-Regular';
+    margin-top: -5.0%;
+    margin-left: 10%;
+   font-weight: bold;
+   
+    font-size: 200%;
+    cursor: pointer;
+    color: lightblue;
+}
+.titre_ajout_
+{
+     font-family: 'Exo-Regular';
+    
+   font-weight: bold;
+   
+    font-size: 100%;
+    cursor: pointer;
+    color: lightblue;
+}
+
 #conteneur_titre_pièce,#conteneur_titre_cemac,#conteneur_titre_capteur
 {
     display: flex;
@@ -25,7 +67,7 @@
     line-height: 50px;
     background-color: darkgray;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 1% 1% 1% 1%;
     padding: 0% 0% 0% 2%;
     text-decoration: none;
@@ -122,7 +164,8 @@
 #conteneur_ajout
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-left: 0%;
 }
 
 #ajout-pièce,#ajout-cemac,#ajout-capteur
@@ -131,12 +174,13 @@
     justify-content: center;
     background-color: darkgray;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 0% 1% 1% 1%;
     padding: 0% 0% 0% 0%;
     text-decoration: none;
     text-align: center;
     width: 100%;
+
     box-shadow: none;
     box-sizing: border-box;
 }
@@ -156,7 +200,7 @@
     width:500px;
     background-color: darkgray;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     border:2px solid lightblue;
     box-shadow: 0 3px 100px rgb(62, 181, 230);
     padding: 0% 1% 1% 1%;
