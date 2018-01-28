@@ -3,10 +3,10 @@
 <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="http://localhost/APP/css/style.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/footer.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/header.css">
-    <link rel="stylesheet" href="http://localhost/APP/css/Fonction_lumiere.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/Fonction_lumiere.css">
     <link rel="script" href="OHcabouge.js">
     <title>Domisep</title>
 </head>
