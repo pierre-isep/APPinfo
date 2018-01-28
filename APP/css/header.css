@@ -64,21 +64,35 @@
 
 #hearthomeentete
 {
-    height: 120px;
-    display:flex;
     margin-left: 15px;
+    height: 100%;
+}
+
+#hometech{
+
+    margin-top: 0%;
+    height: 50%;
 
 }
+
+#domisependessous{
+
+    font-size: 200%;
+    font-family: "Exo-Thin";
+    color : lightblue;
+    margin-left: 27px;
+}
+
+
 titrelogo
 {
-    line-height:120px;
-    font-size: 350%;
+    line-height:85px;
+
+    font-size: 250%;
     font-family: "Exo-Thin";
     color : lightblue;
 
-
 }
-
 
 #menuglobal
 {
