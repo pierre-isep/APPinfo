@@ -40,6 +40,7 @@ if(isset($_POST['instruction_lum2']) && !empty($_POST['instruction_lum2'])){
 
 ?>
 
+<div id="section">
 <div id="conteneur-body">
     <div id="conteneur-general-fonction-temp">
 
@@ -212,7 +213,7 @@ if(isset($_POST['instruction_lum2']) && !empty($_POST['instruction_lum2'])){
 
 
 </div>
-
+</div>
 
 <div>
     <?php
