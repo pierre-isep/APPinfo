@@ -3,10 +3,10 @@
 <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profil.css">
     <link rel="script" href="OHcabouge.js">
     <title>Domisep</title>
 </head>
