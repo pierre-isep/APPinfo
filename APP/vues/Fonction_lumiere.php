@@ -55,10 +55,18 @@ if(isset($_POST['instruction_lum2']) && !empty($_POST['instruction_lum2'])){
                 while($donne=$ID_piece->fetch()){
 
                     $var2=$donne['ID_piece'];
-                    $Nom_piece = $bdd->prepare('SELECT nom_piece FROM piece WHERE id_piece = ?');
-                    $Nom_piece->execute(array($var2)); // nom piece récupéré
-                    $Nom_piece=$Nom_piece->fetch();
-                    $nomdelapiece=$Nom_piece['nom_piece'];
+                    $id_type = $bdd->prepare('SELECT * FROM piece WHERE id_piece = ?');
+                    $id_type->execute(array($var2)); // nom piece récupéré
+                    $id_type=$id_type->fetch();
+                    $iddutypedelapiece=$id_type['id_type_piece'];
+                    $numero = $id_type['numero'];
+
+                    $nomdelapiece = $bdd->prepare('SELECT type FROM type_piece WHERE id_type_piece = ?');
+                    $nomdelapiece->execute(array($iddutypedelapiece)); // nom piece récupéré
+                    $nomdelapiece=$nomdelapiece->fetch();
+                    $nomdelapiece=$nomdelapiece['type'];
+
+                    $nomdelapiece = $nomdelapiece . ' '.$numero;
 
                     $idcapteurlumierev2 = recup_id_capteur_lumiere_V2($bdd,$var2);
 
