@@ -44,13 +44,13 @@ if(isset($_POST['instruction_lum2']) && !empty($_POST['instruction_lum2'])){
 <div id="conteneur-body">
     <div id="conteneur-general-fonction-temp">
 
-        <div id="Titre_temp"><br> Fonctionnalité : Gestion des lumières</div>
+        <div id="Titre_temp"><br><h1> Fonctionnalité : Gestion des lumières </h1></div>
 
         <div id="conteneur-general-alignement">
 
             <div id="conteneur-liste-pièces">
                 <?php
-                echo '<span id="titre_partie1">'." Nombre de lumières alumées par pièce :".'</span>';
+                echo '<span id="titre_partie1">'."<h1> Nombre de lumières<br>alumées par pièce :</h1>".'</span>';
                 echo '<br>';
                 echo '<br>';
                 while($donne=$ID_piece->fetch()){
@@ -168,7 +168,7 @@ if(isset($_POST['instruction_lum2']) && !empty($_POST['instruction_lum2'])){
                 ?>
 
             </div>
-            <div id="conteneur-info_générales"> <span id="nbretotal">Nombre total de lumières éclairées :</span>
+            <div id="conteneur-info_générales"> <span id="nbretotal"><h1>Nombre total de lumières éclairées :</h1></span>
                 <?php
 
 
