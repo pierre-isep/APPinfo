@@ -18,7 +18,7 @@
 
 
 <?php
-include("footer.php");
+include("footer_admin.php");
 ?>
 
 </body>

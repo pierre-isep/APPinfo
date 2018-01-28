@@ -15,15 +15,11 @@
     </div>
     <div id="menuglobal">
         <ul id="menu">
-            <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=cgu_admin_controleur"><a><button id="bouton_sans_style" type="submit" >Tableau de bord</button></a></form>
-            </li>
-            <li id="menu-global-connexion"><a href="#">Statistiques</a>
+            <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=tableau_de_bord_admin&fonction=accueil"><a><button id="bouton_sans_style" type="submit" >Tableau de bord</button></a></form>
             </li>
             <li id="menu-header-gerermamaison"><form  method="post" action="index.php?cible=cgu_admin_controleur"><a><button id="bouton_sans_style" type="submit" >CGU</button></a></form>
             </li>
-            <li id="menu-global-connexion"><a href="#">FAQ</a>
-            </li>
-            <li id="menu-global-contact"><a href="#">Contact</a>
+            <li id="menu-header-gerermamaison"><form  method="post" action="index.php?cible=tableau_de_bord_admin&fonction=catalogue"><a><button id="bouton_sans_style" type="submit" >Catalogue</button></a></form>
             </li>
         </ul>
 
