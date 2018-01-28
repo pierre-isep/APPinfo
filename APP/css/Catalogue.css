@@ -1,0 +1,31 @@
+#section
+{
+	flex-direction: column;
+	text-align: center;
+}
+
+.capteur
+{
+	border: 1px solid grey;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-bottom: 2%;
+
+}
+
+#form2
+{
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-bottom: 1%;
+}
+
+#picto_supprimer
+{
+	height: 4%;
+	width: 4%;
+}
+
+
+
+ 
