@@ -18,6 +18,19 @@ switch ($function) {
 
         break;
 
+         case 'gestion':
+        $vue = "gestion_utilisateur_admin";
+        $title = "gestion_administrateur";
+        $alerte = false;
+
+        break;
+           case 'panne':
+        $vue = "faq";
+        $title = "panne";
+        $alerte = false;
+
+        break;
+
     case 'catalogue':
         $vue = "Catalogue";
         $title = "Catalogue";
