@@ -16,7 +16,7 @@
         </div>
         <div id="menuglobal">
             <ul id="menu">
-                <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=tableau_de_bord_utilisateur&fonction=accueil"><a><button id="bouton_sans_style" type="submit" >Tableau de bord</button></a></form>
+                <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=tableau_de_bord_utilisateur&fonction=tableau"><a><button id="bouton_sans_style" type="submit" >Tableau de bord</button></a></form>
                 </li>
                 <li id="menu-header-gerermamaison"><form  method="post" action="index.php?cible=gerermamaison&fonction=gerermamaison"><a><button id="bouton_sans_style" type="submit" >Gérer ma maison</button></a></form>
    <!--                 <div id="conteneur-sousmenu-header-gerermamaison">
@@ -43,7 +43,7 @@
             <div id="conteneur-menu-utilisateur">
                 <ul id="menu-utilisateur">
                     <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=profil"><a><button id="bouton_sans_style" type="submit" >Profil</button></a></form></li>
-                    <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=gestion_utilisateur"><a><button id="bouton_sans_style" type="submit" >Gérer ma famille</button></a></form></li>
+                    
                     <li><form  method="post" action="index.php?cible=menu_utilisateur&fonction=deconexion"><a><button id="bouton_sans_style" type="submit" >Déconnexion</button></a></form></li>
                 </ul>
 
