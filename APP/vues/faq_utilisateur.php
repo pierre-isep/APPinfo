@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="script" href="OHcabouge.js">
-    <title>Domisep Test</title>
+    <title>Domisep</title>
 </head>
 <body>
 
