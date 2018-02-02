@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/ton_style_de_base.css">
     <link rel="script" href="OHcabouge.js">
-    <title>Domisep test2</title>
+    <title>Domisep</title>
 </head>
 <body>
 <?php include("header_admin.php");?>
