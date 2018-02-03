@@ -16,6 +16,7 @@
 <div id="section">
     <div class="TEXTE">
         <?php
+        // affiche la dernière version des CGU avec la dernière date de modif
         while($donnees = $reponse->fetch()) {
             echo $donnees['Contenu'];
             echo '<br><br>Dernière modification le ', $donnees['Date_de_derniere_modification'];
