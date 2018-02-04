@@ -61,7 +61,7 @@
                         <label>Prénom:</label><input class="case-vide" type="text" name="Prenom"  required/></br>
                         <label>Adresse mail:</label><input class="case-vide" type="mail" name="E-mail" required/></br>
                         <label>Mot de passe:</label><input class="case-vide" type="password" name="Mot_De_Passe"  required/></br>
-                        <label><a href="index.php?cible=cgu_client_controleur">J'accepte les conditions d'utilisation</a></label> <input type="checkbox" name="Conditions" required/></br>
+                        <label><a href="index.php?cible=cgu_client_controleur&fonction=accueil">J'accepte les conditions d'utilisation</a></label> <input type="checkbox" name="Conditions" required/></br>
                         <input type="submit" style="color:#262626;background-color:#efefef; border-radius:5%" value="Inscription" /></br>
                     </p>
                 </form>
@@ -82,7 +82,7 @@
             <footer>&reg;Domisep</footer>
         </div>
         <div id="mention-légales">
-            <footer><form  method="post" action="index.php?cible=cgu_client_controleur"><a><button id="bouton_sans_style" type="submit" style="color:#262626;background-color:#efefef; border-radius:5%" >cgu</button></a></form></footer>
+            <footer><form  method="post" action="index.php?cible=cgu_client_controleur&fonction=accueil"><a><button id="bouton_sans_style" type="submit" style="color:#262626;background-color:#efefef; border-radius:5%" >cgu</button></a></form></footer>
         </div>
     </div>
 </div>

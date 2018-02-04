@@ -18,7 +18,7 @@
         <ul id="menu">
             <li id="menu-header-tableaudebord"><form  method="post" action="index.php?cible=tableau_de_bord_admin&fonction=accueil"><a><button id="bouton_sans_style" type="submit" >Tableau de bord</button></a></form>
             </li>
-            <li id="menu-header-gerermamaison"><form  method="post" action="index.php?cible=cgu_admin_controleur"><a><button id="bouton_sans_style" type="submit" >CGU</button></a></form>
+            <li id="menu-header-gerermamaison"><form  method="post" action="index.php?cible=cgu_admin_controleur&fonction=admin"><a><button id="bouton_sans_style" type="submit" >CGU</button></a></form>
             </li>
             <li id="menu-header-gerermamaison"><form  method="post" action="index.php?cible=tableau_de_bord_admin&fonction=catalogue"><a><button id="bouton_sans_style" type="submit" >Catalogue</button></a></form>
             </li>

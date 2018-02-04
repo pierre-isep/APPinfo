@@ -21,8 +21,8 @@
 		<label for="nom"><strong>Nom</strong> :</label> <input type="text" name="nom"><br><br>
 		<label for="prenom"><strong>Prénom</strong> :</label> <input type="text" name="prenom"><br><br>
 		<label for="login"><strong>Login</strong> : </label> <input type="text" name="login"><br><br>
-		<label for="mdp1"><strong>Mot de passe</strong> :</label> <input type="password" name="mdp"><br><br>
-		<label for="mdp2"><strong>Validez votre Mot de passe</strong> :</label> <input type="password" name="name"><br><br>
+		<label for="mdp1"><strong>Mot de passe</strong> :</label> <input type="password" name="mdp1"><br><br>
+		<label for="mdp2"><strong>Validez votre Mot de passe</strong> :</label> <input type="password" name="mdp2"><br><br>
 		<label for="tel"><strong>Numéro de Téléphone</strong> : </label> <input type="text" name="tel"><br><br>
 		<label for="mail"><strong>Email</strong> : </label> <input type="text" name="mail"><br><br>
 

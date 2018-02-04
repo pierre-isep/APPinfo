@@ -15,7 +15,7 @@
             <footer>&reg;Domisep</footer>
         </div>
         <div id="mention-légales">
-            <footer><form  method="post" action="index.php?cible=cgu_admin_controleur"><a><button id="bouton_sans_style" type="submit" >cgu</button></a></form></footer>
+            <footer><form  method="post" action="index.php?cible=cgu_admin_controleur&fonction=admin"><a><button id="bouton_sans_style" type="submit" >cgu</button></a></form></footer>
         </div>
     </div>
 </div>
