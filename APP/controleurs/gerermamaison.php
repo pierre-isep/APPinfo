@@ -157,12 +157,6 @@ switch ($function) {
         break;
 
 
-
-
-    case 'inscription':
-
-        break;
-
     default:
         // si aucune fonction ne correspond au paramètre function passé en GET
         $vue = "erreur404";
