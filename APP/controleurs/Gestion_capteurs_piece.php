@@ -10,7 +10,7 @@ include './controleurs/fonction.php';
 
 
 $function = $_GET['fonction'];
-
+$id_piece= $_GET['id_piece'];
 
 switch ($function) {
   
