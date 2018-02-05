@@ -38,20 +38,6 @@ session_start();?>
 
         
         <?php
-        // Connexion à la base de données
-        try
-        {
-            $bdd = new PDO('mysql:host=localhost;dbname=hometech', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-
-        }
-        catch(Exception $e)
-        {
-                die('Erreur : '.$e->getMessage());
-        }
-
-
-        
-
         
         $ID_capteur = recup_id_capteur($bdd);
         $ID_piece = '1';
