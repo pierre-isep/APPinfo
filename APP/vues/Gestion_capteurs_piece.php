@@ -17,30 +17,19 @@ session_start();?>
 
 <div id="section">
 
-        <?php $id_Piece='1' ?>
-        <h1>Salle de bain</h1>
-        <div id="Ajout_capteur">
-            <strong>Ajouter capteur</strong><br/><br/>
-            <form action="http://localhost/APP/index.php?cible=Gestion_capteurs_piece&fonction=ajouter_capteur" method="post" >
-                 <label value="Nom">Nom du capteur :</label>
-                 <select name="Nom">
-                 <option value="Humidite">Humidité</option>
-                 <option value="Temperature">Température</option>
-                 <option value="Fenetre">Fenêtre</option>
-                 <option value="Fumee">Fumée</option>
-                 </select><br>
-                 <input type="hidden" value="<?php echo $id_Piece;?>" name="id_piece">
-                 <label for="valeur">Valeur voulue : </label><input type="number" max="100" min="0" step="1"/><br>
-                 <input type="submit" value="valider">
-            </form>
-        </div>
+    <?php
+    $req = $bdd->prepare('SELECT nom_piece FROM piece WHERE id_piece =:id_piece ');
+    $req->execute(array(
+    'id_piece' => $id_piece));
+    $piece = $req->fetch(); ?>
+        <h1><?php echo $piece['nom_piece']?></h1>
+
         
 
         
         <?php
         
         $ID_capteur = recup_id_capteur($bdd);
-        $ID_piece = '1';
 
         while($donne=$ID_capteur->fetch()){
 
