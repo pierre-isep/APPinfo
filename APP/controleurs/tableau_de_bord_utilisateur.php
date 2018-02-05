@@ -18,6 +18,12 @@ switch ($function) {
 
         break;
 
+    case 'faq':
+        $vue = "faq_utilisateur";
+        $title = "faq";
+        $alerte = false;
+        break;
+
     case 'supprimer_piece':
         $vue = "gerer_ma_maison";
         $title = "gerer_ma_maison";
