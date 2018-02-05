@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php include 'modele/connexion.php';
-include("header.php");?>
+include("header_admin.php");?>
 
 
 <div id="section2">
