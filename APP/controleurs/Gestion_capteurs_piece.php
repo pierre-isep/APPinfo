@@ -2,7 +2,7 @@
 /*/session_start();/*/
 
 //inclusion du fichier modèle contenant les appels à la BDD
-
+include 'modele/connexion.php';
 include 'modele/Gestion_capteurs_piece.php';
 
 include './controleurs/fonction.php';
